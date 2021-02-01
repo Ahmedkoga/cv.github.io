@@ -4,17 +4,19 @@
     }
     
     .container {
-        background-image: url(./images/backgroud1.jpg);
+        background-image: url(./images/background2.jpg);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
+        background-position: center;
+        background-size: cover;
     }
     
     #imageProfil {
-        object-fit: cover;
-        width: 10rem;
-        height: 10rem;
-        border-radius: 60%;
-        border: 2px solid linear-gradient(#e66465, #9198e5);
+        object-fit: cover !important;
+        width: 10rem !important;
+        height: 10rem !important;
+        border-radius: 60% !important;
+        object-position: 60% 30% !important;
     }
     
     .nomPrenom {
@@ -37,12 +39,12 @@
         border-left: 4px solid #fff;
     }
     
-    @media(max-width: 540px) {
+    @media(max-width: 753px) {
         #row1Right {
             border-left: none;
         }
         .container {
-            background-image: url(./images/backgroud1.jpg);
+            background-image: url(./images/background2.jpg);
             border-top-left-radius: 0%;
             border-top-right-radius: 0%;
             background-image: linear-gradient(to right, rgb(40, 3, 99), rgb(124, 3, 104));
@@ -51,11 +53,11 @@
             text-align: center;
         }
         #imageProfil {
-            object-fit: cover;
-            width: 8rem;
-            height: 8rem;
-            border-radius: 60%;
-            border: 2px solid linear-gradient(#e66465, #9198e5);
+            object-fit: cover !important;
+            width: 8rem !important;
+            height: 8rem !important;
+            border-radius: 60% !important;
+            object-position: 60% 30% !important;
         }
         .bg_marg {
             background-color: #e66465;
@@ -96,7 +98,8 @@
         font-size: 1.5rem;
         background-color: #ddd;
         border: none;
-        color: black;
+        color: rgb(2, 126, 115);
+        text-shadow: 1px 2px rgb(24, 23, 23);
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
